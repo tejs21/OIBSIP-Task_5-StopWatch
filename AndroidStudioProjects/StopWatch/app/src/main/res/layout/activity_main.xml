@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="100sp"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="400sp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="180sp"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="#039BE5"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <TextView
+            android:id="@+id/time_view"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="90sp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textSize="56sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#03A9F4"
+        android:layout_marginTop="350sp"
+        android:layout_marginLeft="40sp"
+        android:onClick="onClickStart"
+        android:text="Start" />
+
+    <Button
+        android:id="@+id/stop_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#03A9F4"
+        android:layout_marginTop="350sp"
+        android:layout_marginLeft="155sp"
+        android:onClick="onClickStop"
+        android:text="Stop" />
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#03A9F4"
+        android:layout_marginTop="350sp"
+        android:layout_marginLeft="270sp"
+        android:onClick="onClickReset"
+        android:text="Reset" />
+
+
+</RelativeLayout>
